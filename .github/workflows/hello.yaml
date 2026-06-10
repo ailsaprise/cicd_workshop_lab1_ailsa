@@ -1,0 +1,38 @@
+name: Hello GitHub Actions
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a message
+        run: echo "👋 Hello from GitHub Actions!"
+
+      - name: Show the current date
+        run: date
+
+      - name: List repository files before checkout
+        run: ls -la
+
+      - name: Checkout repo # Checks out repo files to disk
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: List repository files after checkout
+        run: ls -la
+
+  say-hi:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a message
+        run: echo "👋 Hi from GitHub Actions!"
+
+      - name: List repository files
+        run: ls -la
