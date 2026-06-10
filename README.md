@@ -1,6 +1,6 @@
 # Example project
 
-This is a sandbox project.
+This is a sandbox project. Test
 
 ## Code of Conduct
 
