@@ -12,6 +12,8 @@ from src.dhsc_logger import configure_dhsc_logger
 
 logger = logging.getLogger(__name__)
 
+# Here are some changes for a new branch
+
 
 def main():
     config = {}
