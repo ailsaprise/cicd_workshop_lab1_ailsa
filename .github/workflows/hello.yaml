@@ -32,7 +32,7 @@ jobs:
 
     steps:
       - name: Print a message
-        run: echo "👋 Hi from GitHub Actions!"
+        run: echo "👋 Hi from GitHub Actions! :-p"
 
       - name: List repository files
         run: ls -la
